@@ -2,7 +2,7 @@ import { Container } from "./App.styled";
 import Section from "./Section";
 import Profile from "./Profile/Profile";
 import user from './user.json';
-import Statistics from "./Statistics";
+import Statistics from "./Profile/Statistics/Statistics";
 import data from './data.json'
 
 
