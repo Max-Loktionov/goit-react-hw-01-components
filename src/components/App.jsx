@@ -3,7 +3,9 @@ import Section from "./Section";
 import Profile from "./Profile/Profile";
 import user from './user.json';
 import Statistics from "./Statistics/Statistics";
-import data from './data.json'
+import data from './data.json';
+import FriendList from "./FriendList/FriendList";
+import friends from './FriendList/friends.json'
 
 
 
@@ -31,7 +33,8 @@ import data from './data.json'
           label= {data.label}
           percentage={data.percentage} 
         />
-        </Section>
+      </Section>
+      <FriendList friends={friends} />
     </Container>
   );
 };
