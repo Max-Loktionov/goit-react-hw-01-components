@@ -1,12 +1,14 @@
 import PropTypes from 'prop-types';
+import { StatsItem } from './Statistics.styled'
 
-function StatItem({id,label,percentage}) {
+function StatItem({ id, label, percentage, backgroundColor }) {
+    
  return (
        
-     <li key={id}>    
+     <StatsItem backgroundColor={backgroundColor}  key={id}>    
       <span> {label} </span> 
       <span> {percentage} </span> 
-     </li>
+     </StatsItem>
  ) }
       
 

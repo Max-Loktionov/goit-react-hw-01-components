@@ -2,7 +2,7 @@ import { Container } from "./App.styled";
 import Section from "./Section";
 import Profile from "./Profile/Profile";
 import user from './user.json';
-import Statistics from "./Profile/Statistics/Statistics";
+import Statistics from "./Statistics/Statistics";
 import data from './data.json'
 
 
@@ -26,7 +26,11 @@ import data from './data.json'
       <Section 
       className="statistics" title={data.title}
       >
-      <Statistics  items={data} />
+        <Statistics items={data}
+          id={data.id}
+          label= {data.label}
+          percentage={data.percentage} 
+        />
         </Section>
     </Container>
   );

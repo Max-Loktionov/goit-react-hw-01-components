@@ -1,5 +1,12 @@
 import PropTypes from 'prop-types';
-import { UserCard, Description, StatsList, StatsItem } from './Profile.styled';
+import {
+  UserCard,
+  Description,
+  StatsList,
+  StatsItem,
+  Username,
+  UserInfo,
+} from './Profile.styled';
 import defaultImage from '../no-image-icon-23485.png';
 
 export default function Profile({
@@ -15,9 +22,9 @@ export default function Profile({
     <UserCard>
       <Description>
         <img src={avatar} alt="User avatar" width="200" />
-        <p className="name"> {username}</p>
-        <p className="tag"> {tag}</p>
-        <p className="location"> {location} </p>
+        <Username> {username}</Username>
+        <UserInfo> {tag}</UserInfo>
+        <UserInfo> {location} </UserInfo>
       </Description>
 
       <StatsList>
