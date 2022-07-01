@@ -39,5 +39,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "react-hw",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Max-Loktionov/goit-react-hw-01-components.git"
+  },
+  "author": "Max-Loktionov <studreno@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Max-Loktionov/goit-react-hw-01-components/issues"
   }
 }
