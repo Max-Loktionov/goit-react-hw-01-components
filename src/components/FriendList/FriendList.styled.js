@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FriendCards = styled.ul`
-  margin-top: 24px;
+  margin-top: 48px;
   background-color: gold;
 `;
 export const Friend = styled.li`

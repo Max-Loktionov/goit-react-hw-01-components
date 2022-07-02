@@ -13,8 +13,7 @@ import transactions from './transactions.json';
 
  const App = () => {
   return (
-    <Container
-    >
+    <Container>
       
        <Profile user ={user}
     avatar={user.avatar}
@@ -26,16 +25,9 @@ import transactions from './transactions.json';
     likes={user.stats.likes}
         />
         
-      {/* <Section 
-      className="statistics" title={data.title}
-      > */}
-        {/* <Statistics title="Upload stats" items={data} /> */}
-        <Statistics items={data}
-          id={data.id}
-          label= {data.label}
-          percentage={data.percentage} 
-        />
-      {/* </Section> */}
+      <Section  title={data.title} >
+        <Statistics title="Upload stats" items={data} />
+      </Section>
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </Container>

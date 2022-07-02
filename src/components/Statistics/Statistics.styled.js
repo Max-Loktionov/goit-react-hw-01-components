@@ -13,8 +13,9 @@ export const StatsItem = styled.li`
   align-items: center;
   width: 63px;
   height: 63px;
-  color: #212121;
+  margin-top: 48px;
   padding: 4px;
+  color: #212121;
   border: solid 1px violet;
   background-color: ${props => {
     return props.backgroundColor;

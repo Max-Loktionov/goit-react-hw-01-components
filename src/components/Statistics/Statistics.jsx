@@ -5,12 +5,8 @@ import {StatList, GetRandomHexColor, } from './Statistics.styled'
 
  function Statistics({items}) {
    
-     return (
-         // <section className="statistics">
-         //     <h2 className="title">{items.title}</h2>
-         
-            <StatList>
-                
+     return (         
+            <StatList>    
                 {items.map(item => (
                     
                     <StatItem
@@ -19,16 +15,12 @@ import {StatList, GetRandomHexColor, } from './Statistics.styled'
                     label={item.label} 
                     percentage={item.percentage}
                     key={item.id}
-                     />   
-                       
+                     />         
                 ))}
                   
          </StatList>
-        // </section>
     );
 }
-
-
 
 Statistics.propTypes = {
   items: PropTypes.array,

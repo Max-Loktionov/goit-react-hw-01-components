@@ -51,6 +51,7 @@ export const StatsLabel = styled.span`
   padding: 4px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 `;
 export const StatsQuantity = styled.span`
   font-weight: 700;

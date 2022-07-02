@@ -14,13 +14,13 @@ export default function TransactionHistory({ items}) {
   </thead>
 
         <tbody>
-                {items.map(item => {
+                {items.map(({id,type,amount,currency}) => {
                     
                     return (
-                        <TableRow id={item.id} key={item.id}>
-                            <TableData>{ item.type}</TableData>
-                            <TableData>{ item.amount}</TableData>
-                            <TableData>{ item.currency}</TableData>
+                        <TableRow id={id} key={id}>
+                            <TableData>{ type}</TableData>
+                            <TableData>{ amount}</TableData>
+                            <TableData>{ currency}</TableData>
                         </TableRow>
                     )
 
@@ -37,7 +37,7 @@ item: PropTypes.arrayOf(
     PropTypes.shape({
         id:PropTypes.string.isRequired,
         type: PropTypes.string.isRequired,
-        amoumt: PropTypes.number.isRequired,
+        amount: PropTypes.number.isRequired,
         currency:PropTypes.string.isRequired,
          }),
     )
