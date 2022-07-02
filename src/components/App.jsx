@@ -5,8 +5,9 @@ import user from './user.json';
 import Statistics from "./Statistics/Statistics";
 import data from './data.json';
 import FriendList from "./FriendList/FriendList";
-import friends from './FriendList/friends.json'
-
+import friends from './FriendList/friends.json';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
+import transactions from './transactions.json';
 
 
 
@@ -25,16 +26,18 @@ import friends from './FriendList/friends.json'
     likes={user.stats.likes}
         />
         
-      <Section 
+      {/* <Section 
       className="statistics" title={data.title}
-      >
+      > */}
+        {/* <Statistics title="Upload stats" items={data} /> */}
         <Statistics items={data}
           id={data.id}
           label= {data.label}
           percentage={data.percentage} 
         />
-      </Section>
+      {/* </Section> */}
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </Container>
   );
 };

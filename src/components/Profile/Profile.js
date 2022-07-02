@@ -6,6 +6,8 @@ import {
   StatsItem,
   Username,
   UserInfo,
+  StatsLabel,
+  StatsQuantity,
 } from './Profile.styled';
 import defaultImage from '../no-image-icon-23485.png';
 
@@ -29,16 +31,16 @@ export default function Profile({
 
       <StatsList>
         <StatsItem>
-          <span className="label">Followers</span>
-          <span className="quantity"> {followers}</span>
+          <StatsLabel>Followers</StatsLabel>
+          <StatsQuantity> {followers}</StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <span className="label">Views</span>
-          <span className="quantity"> {views} </span>
+          <StatsLabel>Views</StatsLabel>
+          <StatsQuantity> {views} </StatsQuantity>
         </StatsItem>
         <StatsItem>
-          <span className="label">Likes</span>
-          <span className="quantity"> {likes} </span>
+          <StatsLabel>Likes</StatsLabel>
+          <StatsQuantity> {likes} </StatsQuantity>
         </StatsItem>
       </StatsList>
     </UserCard>

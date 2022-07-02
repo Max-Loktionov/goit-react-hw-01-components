@@ -33,7 +33,6 @@ export const Status = styled.span`
 `;
 export const Avatar = styled.img`
   width: 60px;
-
   margin-left: 48px;
   border: 1px solid grey;
   border-radius: 16px;

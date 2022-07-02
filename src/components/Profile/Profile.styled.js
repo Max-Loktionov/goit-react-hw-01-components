@@ -44,3 +44,16 @@ export const UserInfo = styled.p`
   padding: 4px;
   font-size: 14px;
 `;
+export const StatsLabel = styled.span`
+  display: block;
+  width: 90px;
+  height: 70px;
+  padding: 4px;
+  margin-left: auto;
+  margin-right: auto;
+`;
+export const StatsQuantity = styled.span`
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+`;

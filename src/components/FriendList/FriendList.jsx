@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImage from '../no-image-icon-23485.png';
-import { FriendCards, Friend,Status,Avatar,FriendName } from './FriendList.styled';
+import { FriendCards,Friend,Status,Avatar,FriendName } from './FriendList.styled';
 
 
 export default function FriendList({ friends }) {
