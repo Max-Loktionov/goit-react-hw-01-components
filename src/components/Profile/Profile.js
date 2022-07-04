@@ -11,7 +11,7 @@ import {
 } from './Profile.styled';
 import defaultImage from '../no-image-icon-23485.png';
 
-export default function Profile({
+function Profile({
   username = 'jan',
   tag,
   location,
@@ -56,3 +56,5 @@ Profile.propTypes = {
   views: PropTypes.number.isRequired,
   likes: PropTypes.number.isRequired,
 };
+
+export default Profile;

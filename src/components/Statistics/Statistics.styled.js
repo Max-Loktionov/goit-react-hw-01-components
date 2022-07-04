@@ -13,7 +13,7 @@ export const StatsItem = styled.li`
   align-items: center;
   width: 63px;
   height: 63px;
-  margin-top: 48px;
+  margin-top: 24px;
   padding: 4px;
   color: #212121;
   border: solid 1px violet;

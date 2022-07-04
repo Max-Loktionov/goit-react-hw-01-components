@@ -1,31 +1,29 @@
-import { Container } from "./App.styled";
-import Section from "./Section";
-import Profile from "./Profile/Profile";
+import { Container } from './App.styled';
+import Section from './Section';
+import Profile from './Profile';
 import user from './user.json';
-import Statistics from "./Statistics/Statistics";
+import Statistics from './Statistics/Statistics';
 import data from './data.json';
-import FriendList from "./FriendList/FriendList";
+import FriendList from './FriendList';
 import friends from './FriendList/friends.json';
-import TransactionHistory from './TransactionHistory/TransactionHistory';
+import TransactionHistory from './TransactionHistory';
 import transactions from './transactions.json';
 
-
-
- const App = () => {
+const App = () => {
   return (
     <Container>
-      
-       <Profile user ={user}
-    avatar={user.avatar}
-    username={user.username }
-    tag={user.tag }
-    location={user.location}
-    followers={user.stats.followers}
-    views={user.stats.views}
-    likes={user.stats.likes}
-        />
-        
-      <Section  title={data.title} >
+      <Profile
+        user={user}
+        avatar={user.avatar}
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        followers={user.stats.followers}
+        views={user.stats.views}
+        likes={user.stats.likes}
+      />
+
+      <Section title={data.title}>
         <Statistics title="Upload stats" items={data} />
       </Section>
       <FriendList friends={friends} />

@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const UserCard = styled.div`
-  // height: 450px;
-  // width: 350px;
   padding: 10px;
   background-color: hwb(68deg 18% 36% / 72%);
   border-radius: 5px;

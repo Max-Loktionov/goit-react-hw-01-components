@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Section({ title="Upload stats", children }) {
+function Section({ title = 'Upload stats', children }) {
   return (
     <div>
       {title && <h2>{title}</h2>}
